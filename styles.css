@@ -1,0 +1,311 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6em;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  background-color: #1a1c20;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: black;
+  font-size: 13px;
+  padding: 1rem;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+li {
+  display: inline;
+  list-style: none;
+  margin: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 4px 10px;
+}
+
+header {
+  display: flex;
+  background-color: black;
+  max-height: 100%;
+  flex-direction: column;
+  padding: 8rem;
+  width: 100%;
+}
+
+header img {
+  align-self: center;
+  width: 100vw;
+}
+
+.logo {
+  height: 55px;
+}
+
+h2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 22px;
+  padding: 5px 0;
+  font-weight: 300;
+}
+
+section {
+  display: flex;
+  padding: 1rem;
+  background-color: #1a1c20;
+  font-size: 16px;
+  justify-content: center;
+}
+
+section h4 {
+  color: #3eb0ef;
+  font-size: 12px;
+  padding-top: 1rem;
+}
+section h1 {
+  font-size: 32px;
+  padding-bottom: 1rem;
+}
+section p {
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 2rem;
+}
+.image img {
+  width: 45vw;
+  height: 55vh;
+  margin: 3rem;
+  object-fit: cover;
+}
+
+section .article {
+  width: 20vw;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+
+section p {
+  color: #90a2aa;
+}
+
+footer {
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 1.4rem 0.5rem;
+}
+
+.name-info {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.name {
+  align-self: flex-start;
+  height: 20px;
+}
+
+.info {
+  align-self: flex-start;
+  color: #738a94;
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2rem;
+  justify-content: center;
+  font-size: 16px;
+  background-color: #1a1c20;
+  text-align: left;
+}
+.card {
+  width: 350px;
+  padding: 0 20px 40px;
+}
+.card img {
+  width: 350px;
+}
+
+.grid-row .article h4 a {
+  font-size: 12px;
+  color: #3eb0ef;
+}
+.grid-row .article h2 {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: left;
+}
+.grid-row .article p {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 2rem;
+  color: #90a2aa;
+}
+
+.grid-row2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+  justify-content: center;
+  font-size: 16px;
+  background-color: #1a1c20;
+  text-align: left;
+  margin: 4rem;
+}
+
+.grid-row2 .article2 h4 a {
+  font-size: 12px;
+  color: #3eb0ef;
+}
+.grid-row2 .article2 h1 {
+  font-size: 22px;
+
+  text-align: left;
+}
+.grid-row2 .article2 p {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 2rem;
+  color: #90a2aa;
+}
+.card2 {
+  width: 550px;
+  padding: 0 20px 40px;
+}
+.card2 img {
+  width: 550px;
+  height: 190px;
+  object-fit: cover;
+}
+
+.section2 {
+  display: flex;
+  padding: 1rem;
+  background-color: #1a1c20;
+  font-size: 16px;
+  justify-content: center;
+}
+.section2 h4 {
+  color: #3eb0ef;
+  font-size: 12px;
+  padding-top: 1rem;
+}
+.section2 h1 {
+  font-size: 32px;
+
+  padding-bottom: 1rem;
+}
+.section2 p {
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 2rem;
+}
+.section2 .image img {
+  width: 45vw;
+  height: 55vh;
+  margin: 3rem;
+  object-fit: cover;
+}
+
+.section2 .article {
+  width: 20vw;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+
+.section2 p {
+  color: #90a2aa;
+}
+.post-card {
+  display: grid;
+  grid-template-columns: 50px 200px;
+
+  grid-template-areas:
+    "post-icon post-name"
+    "post-icon post-info";
+}
+.post-name-info {
+  font-size: 12px;
+  padding-bottom: 15px;
+}
+.post-icon img {
+  grid-area: post-icon;
+  width: 30px;
+  margin: 1rem 0;
+  border-radius: 50%;
+  height: 30px;
+}
+
+.post-name {
+  align-self: center;
+  grid-area: post-name;
+}
+
+.post-info {
+  grid-area: post-info;
+  color: #738a94;
+}
+
+.footer {
+  background-color: black;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: white;
+  border-top-right-radius: 1rem;
+}
+
+.footer .link {
+  color: white;
+}
+.footer .footer-header {
+  font-weight: bold;
+  font-size: large;
+}
+.footer ul {
+  padding-inline-start: 0px;
+}
